@@ -677,7 +677,6 @@ class myEmbeddings(Embeddings):
 
 
 if __name__ == "__main__":
-    num = 0
     human_repair_num = 10
     # param-csv_file_path
     clean_data_path = 'datasets/hospital/hospital_clean.csv'
