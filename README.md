@@ -1,24 +1,23 @@
-# ZeroC
-
-**ZeroC** is a training-free error correction system powered by large language models (LLMs). This repository contains the source code for the paper "ZeroC: A Zero-Training Error Correction System via Large Language Models" published in *Scalable Data Science*.
-
+# ZeroEC
+**ZeroEC** is a training-free error correction system powered by large language models (LLMs). This repository contains the source code for the paper "ZeroC: A Zero-Training Error Correction System via Large Language Models" published in *Scalable Data Science*.
+**Note:** This repository was originally created for the paper "ZeroC: A Zero-Training Error Correction System via Large Language Models [Scalable Data Science]". However, the paper title has been updated to "ZeroEC: A Training-Free Error Correction System via Large Language Models". The code remains the same.
 ## Getting Started
 
 ### Installation
 
-To set up the environment and get started with ZeroC, follow these steps:
+To set up the environment and get started with ZeroEC, follow these steps:
 
 1. **Create a Conda environment and clone the repository**:
 
    ```
    # Create a new environment with Python 3.10
-   conda create -n zeroc python=3.10
-   conda activate zeroc
+   conda create -n zeroec python=3.10
+   conda activate zeroec
 
    # Install PyTorch with the specified version and CUDA toolkit
    conda install pytorch==1.13.1 cudatoolkit=11.7 -c pytorch -c conda-forge
 
-   # Clone the ZeroC repository
+   # Clone the ZeroEC repository
    git clone https://github.com/YangChen32768/ZeroC.git
    cd ZeroC
 
@@ -29,11 +28,11 @@ To set up the environment and get started with ZeroC, follow these steps:
 
 All the data used in this work can be found in `datasets` folder.
 
-## Running ZeroC
+## Running ZeroEC
 
-ZeroC employs large language models (LLMs) for effective and explainable error correction. You can choose any LLM to run ZeroC.
+ZeroEC employs large language models (LLMs) for effective and explainable error correction. You can choose any LLM to run ZeroEC.
 
-To run ZeroC, specify the following parameters:
+To run ZeroEC, specify the following parameters:
 
 * `OPENAI_API_BASE`: the base URL of the LLM API (e.g., OpenAI API)
 * `MODEL_NAME`: the name of the LLM model (e.g., "gpt-3.5-turbo" or "gpt-4o")
