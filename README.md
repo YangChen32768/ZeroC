@@ -1,13 +1,10 @@
 # ZeroEC
-**ZeroEC** is a training-free error correction system powered by large language models (LLMs). This repository contains the source code for the paper "ZeroC: A Zero-Training Error Correction System via Large Language Models" published in *Scalable Data Science*.
-**Note:** This repository was originally created for the paper "ZeroC: A Zero-Training Error Correction System via Large Language Models [Scalable Data Science]". However, the paper title has been updated to "ZeroEC: A Training-Free Error Correction System via Large Language Models". The code remains the same.
+**ZeroEC** is a training-free error correction system powered by large language models (LLMs). This repository contains the source code for the paper "ZeroEC: A Zero-Training Error Correction System via Large Language Models" published in *Scalable Data Science*.
 ## Getting Started
 
 ### Installation
 
 To set up the environment and get started with ZeroEC, follow these steps:
-
-1. **Create a Conda environment and clone the repository**:
 
    ```
    # Create a new environment with Python 3.10
