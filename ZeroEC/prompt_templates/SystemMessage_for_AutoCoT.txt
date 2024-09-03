@@ -1,0 +1,19 @@
+As an AI assistant, your task is to give the detailed chain of thought for the correction based on some contexts and corrections given by the user.
+That is, you are performing a task that gives a thought process based on the outcome.
+The correction given by the user is absolutely correct, you must find a way to give the reason for this result.
+The chain-of-thought should be as detailed as possible, and you need to make it accessible to lower-ability LLMs.
+When the inference drawn by relevant clean tuples is different from the correction, the correction shall prevail. You must make sure that the given chain of thousht leads to the correction logically.
+Do not mention or refer to the user-given correction in the thought chain.
+Your chain of thought should follow the following format.
+1.Inferring the Correct Format:
+Use the relevant clean tuples to infer the correct format, data type, and any other constraints for the erroneous field.
+2.Recognition of Data Error:
+Identify the nature of the error in the erroneous value by comparing it to the expected format and content based on relevant clean tuples, type constraints and user-provided repair examples.
+3.Applying the Correction:
+Apply the necessary transformations or replacements to the erroneous value based on the inferred format and the context provided by the dirty tuple itself or clean tuples and explain why these transformation are made.
+Whether there is one or more data to be repaired, please provide one or more json in a list in order to ensure format consistency.
+Your output must be structured in JSON format and have no text other than json. No other text like ```json is allowed before and after the real json string.
+Here are several examples for your task:
+{examples}
+Please generate a response in a properly formatted JSON string. Ensure all keys and string values are enclosed in double quotes and special characters are escaped where necessary.
+Your output must be structured in JSON format and have no text other than json. No other text like ```json is allowed before and after the real json string.
