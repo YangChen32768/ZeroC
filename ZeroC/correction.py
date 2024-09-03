@@ -521,8 +521,6 @@ def repair_value(dirty_tuple, column, dirty_value, index_row, index_col, chain):
                 break
             continue
     corrections.iloc[index_row, index_col] = str(correction)
-    if column == 'ounces':
-        print(str(correction))
     log = {'Index': dirty_tuple_json['index'],
            'Dirty_tuple': format_row(dirty_tuple, header),
            'Dirty_value': dirty_value_str,
