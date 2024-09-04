@@ -33,7 +33,8 @@ To run ZeroEC, specify the following parameters:
 
 * `OPENAI_API_BASE`: the base URL of the LLM API (e.g., OpenAI API)
 * `MODEL_NAME`: the name of the LLM model (e.g., "gpt-3.5-turbo" or "gpt-4o")
-
+* `OPENAI_API_KEY`: your secret API key for accessing the LLM API
+  
 You can also use a local LLM by performing end-to-end calls to the LLM.
 
 To correct errors in a dataset, provide the dirty dataset and the error detection results, and run:
